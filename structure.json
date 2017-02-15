@@ -1,0 +1,82 @@
+{
+    "structure": [
+	{
+	    "type": "folder",
+	    "name": "manifests",
+	    "path": "/manifests",
+	    "children": [
+		{
+		    "type": "file",
+		    "name": "init.pp",
+		    "path": "/manifests/init.pp",
+		    "template": "init.mako"
+		},{
+		    "type": "file",
+		    "name": "params.pp",
+		    "path": "/manifests/params.pp",
+		    "template": "params.mako"
+		},{
+		    "type": "file",
+		    "name": "v1_0_1.pp",
+		    "path": "/manifests/v1_0_1.pp",
+		    "template": "grid.mako"
+		}
+	    ]
+	},{
+            "type": "file",
+            "name": "Gemfile",
+            "path": "Gemfile"
+        },{
+            "type": "file",
+            "name": ".fixtures.yml",
+            "path": ".fixtures.yml",
+	    "template": "fixtures.mako"
+        },{
+            "type": "file",
+            "name": "metadata.json",
+            "path": "metadata.json",
+	    "template": "metadata.mako"
+	},{
+	    "type": "file",
+	    "name": "Rakefile",
+	    "path": "Rakefile",
+	    "template": "Rakefile.mako"
+	},{
+	    "type": "file",
+	    "name": ".gitignore",
+	    "path": ".gitignore"
+	},{
+	    "type": "folder",
+	    "name": "spec",
+	    "path": "/spec",
+	    "children": [
+		{
+		    "type": "file",
+		    "name": "spec_helper.rb",
+		    "path": "/spec/spec_helper.rb"
+		},{
+		    "type": "folder",
+		    "name": "classes",
+		    "path": "/spec/classes",
+		    "children": [
+			{
+			    "type": "file",
+			    "name": "init_spec.rb",
+			    "path": "/spec/classes/init_spec.rb",
+			    "template": "init_spec.mako"
+			}
+		    ]
+		}
+	    ]
+	}
+    ],
+    "resources": [
+	{
+	    "type": "package",
+	    "name": "rpmname",
+	    "ensure": "1.0.0"
+	}
+    ]
+}
+
+    
